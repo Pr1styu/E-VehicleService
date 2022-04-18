@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EVehicleservice</title>
+    <title>E-Vehicleservice</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,33 @@
   </head>
 
   <body>
-    <%= yield %>
+  <div id="page">
+    <div id="header">
+      <% if logged_in_as_user? %>
+        <%= render 'layouts/user_menu' %>
+      <% elsif logged_in_as_service? %>
+        <%= render 'layouts/service_menu' %>
+      <% else %>
+        <%= render 'layouts/guest_menu' %>
+      <% end %>
+    </div>
+    <div id="main">
+      <div id="menu">
+        <% if logged_in_as_user? %>
+        <%= render 'layouts/user_menu' %>
+        <% elsif logged_in_as_service? %>
+        <%= render 'layouts/service_menu' %>
+          <% else %>
+        <%= render 'layouts/guest_menu' %>
+        <% end %>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+    <div id="footer">
+      RoR, 2022
+    </div>
+  </div>
   </body>
 </html>

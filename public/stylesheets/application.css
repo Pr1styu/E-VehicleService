@@ -1,0 +1,33 @@
+div#page {
+    width: 800px;
+}
+
+div#header {
+    height: 100px;
+    background-color: #ddd;
+}
+
+div#footer {
+    height: 100px;
+    background-color: #eee;
+    text-align: center;
+    clear: both;
+}
+
+div#main {
+    height: 600px;
+}
+
+div#menu {
+    float: left;
+    width: 24%;
+    height: 100%;
+    background−color: #0d0;
+}
+
+div#content {
+    float: left;
+    width: 76%;
+    height: 100%;
+    background-color: #eee;
+}
