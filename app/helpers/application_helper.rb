@@ -1,6 +1,6 @@
 module ApplicationHelper
   def logged_in_as_user?
-    true
+    false
   end
 
   def logged_in_as_service?

@@ -13,3 +13,39 @@
  *= require_tree .
  *= require_self
  */
+
+div#page {
+    margin: auto;
+    width: 800px;
+}
+
+div#header {
+    margin: auto;
+    height: 100px;
+    background-color: #ddd;
+}
+div#footer {
+    margin: auto;
+    height: 100px;
+    background-color: #ccc;
+    text-align: center;
+    clear: both;
+}
+div#main {
+    margin: auto;
+    height: 600px;
+}
+div#menu {
+    float: left;
+    width: 24%;
+    height: 100%;
+    background-color: #0d0;
+}
+div#content {
+    float: left;
+    margin: auto;
+    width: 76%;
+    height: 100%;
+    background-color: #eee;
+}
+

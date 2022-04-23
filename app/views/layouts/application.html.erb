@@ -22,15 +22,6 @@
       <% end %>
     </div>
     <div id="main">
-      <div id="menu">
-        <% if logged_in_as_user? %>
-        <%= render 'layouts/user_menu' %>
-        <% elsif logged_in_as_service? %>
-        <%= render 'layouts/service_menu' %>
-          <% else %>
-        <%= render 'layouts/guest_menu' %>
-        <% end %>
-      </div>
       <div id="content">
         <%= yield %>
       </div>
