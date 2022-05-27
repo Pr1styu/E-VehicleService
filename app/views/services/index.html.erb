@@ -1,0 +1,22 @@
+<h1>Services</h1>
+
+<table id="services">
+  <thead>
+  <th>Name</th>
+  <th>Location</th>
+  <th>Rating</th>
+  </thead>
+  <tbody>
+  <% @services.each do |service| %>
+    <%#= render service %>
+    <tr>
+      <td><%= service.name %></td>
+      <td><%= service.location %></td>
+      <td><%= service.rating %></td>
+      <td>
+        <%= link_to "Show", service %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
