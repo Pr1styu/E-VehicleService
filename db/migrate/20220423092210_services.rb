@@ -4,7 +4,6 @@ class Services < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :location
       t.integer :snumber
-      t.string :idnum
       t.float :rating
       t.string :brands
       t.string :pnumber

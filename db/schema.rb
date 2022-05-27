@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_23_094413) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_23_095621) do
   create_table "services", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "location"
@@ -40,6 +40,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_23_094413) do
     t.string "sdescription"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "price"
     t.index ["services_id"], name: "index_vservices_on_services_id"
     t.index ["user_id"], name: "index_vservices_on_user_id"
   end

@@ -1,0 +1,3 @@
+class Vservice < ApplicationRecord
+end
+

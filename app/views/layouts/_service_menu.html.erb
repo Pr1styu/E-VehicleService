@@ -1,15 +1,6 @@
-Hello, Guest!
+<p>Hello, Valaki Szerelő!</p>
 
-<fieldset>
-  <legend>Login</legend>
-  <%= form_tag '/sessions/create', method: :post do %>
-    <%= label_tag 'email', 'Email' %>
-    <%= text_field_tag 'email', '', size: 14 %>
-    <%= label_tag 'password', 'Password' %>
-    <%= password_field_tag 'password', '', size: 14 %>
-    <%= submit_tag 'Login' %>
-  <% end %>
-</fieldset>
-
-<%= link_to "Register", '/users/new' %><br/>
-<%= link_to "Forgotten password", '/users/forgotten' %>
+<p><%= link_to "Profile", profile_path %></p>
+<p><%= link_to "New Repair", new_repairs_path %></p>
+<p><%= link_to "Repairs", own_repairs_path %></p>
+<p><%= link_to "Logout", 'sessions/destroy' %></p>

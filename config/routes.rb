@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :services
+  resources :vservices
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   get 'users/new', to: 'users#new', as: 'register'
   post 'users/create', to: 'users#create', as: 'create_user'
